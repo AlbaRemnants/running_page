@@ -13,7 +13,7 @@ const MAP_LAYER_LIST=['road-label',  'waterway-label',  'natural-line-label',
                      ];
 
 // styling: set to `true` if you want dash-line route
-const USE_DASH_LINE = true;
+const USE_DASH_LINE = false;
 // styling: route line opacity: [0, 1]
 const LINE_OPACITY = 0.4;
 // styling: map height
@@ -22,7 +22,7 @@ const MAP_HEIGHT = 600;
 const ROAD_LABEL_DISPLAY = true;
 
 // IF you outside China please make sure IS_CHINESE = false
-const IS_CHINESE = true;
+const IS_CHINESE = false;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength, year) => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
@@ -75,6 +75,6 @@ const nike = 'rgb(224,237,94)'; // if you want change the main color change here
 
 // If your map has an offset please change this line
 // issues #92 and #198
-export const NEED_FIX_MAP = false;
+export const NEED_FIX_MAP = true;
 export const MAIN_COLOR = nike;
 export const PROVINCE_FILL_COLOR = '#47b8e0';
